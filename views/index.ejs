@@ -1,0 +1,118 @@
+  <% layout("/layouts/boilerplate") %>
+  <style>
+
+    .filters{
+      display: flex;
+      flex: wrap;
+      justify-content: space-evenly;
+      margin: 5px;
+      align-items: center;
+      border: 2px solid black;
+      border-radius: 2rem;
+    }
+    .filter{
+      font-size: 2.5rem;
+      margin: 3px;
+      opacity: 0.7;
+    }
+    .filter:hover{
+      opacity: 1;
+
+    }
+    
+  </style>
+    
+    
+    <div class="row row-col-lg-3 row-col-md-2 row-col-sm-1">
+      <div class="filters">
+        <div class="filter">
+          <i class="fa-solid fa-person-swimming"></i>
+        </div>
+        <div class="filter">
+          <i class="fa-solid fa-camera-viewfinder"></i>
+        </div>
+        <div class="filter">
+          <i class="fa-brands fa-fort-awesome-alt"></i>
+        </div>
+        <div class="filter">
+          <i class="fa-solid fa-water"></i>
+        </div>
+        <div class="filter">
+          <i class="fa-solid fa-cow"></i>
+        </div>
+        <div class="filter">
+          <i class="fa-solid fa-umbrella-beach"></i>
+        </div>
+        <div class="filter">
+          <i class="fa-solid fa-person-swimming"></i>
+        </div>
+        <div class="filter">
+          <i class="fa-solid fa-camera-viewfinder"></i>
+        </div>
+        <div class="filter">
+          <i class="fa-brands fa-fort-awesome-alt"></i>
+        </div>
+        <div class="filter">
+          <i class="fa-solid fa-water"></i>
+        </div>
+        <div class="filter">
+          <i class="fa-solid fa-cow"></i>
+        </div>
+        <div class="filter">
+          <i class="fa-solid fa-umbrella-beach"></i>
+        </div>
+        <div class="filter">
+          <i class="fa-solid fa-person-swimming"></i>
+        </div>
+        <div class="filter">
+          <i class="fa-solid fa-camera-viewfinder"></i>
+        </div>
+        <div class="filter">
+          <i class="fa-brands fa-fort-awesome-alt"></i>
+        </div>
+        <div class="filter">
+          <i class="fa-solid fa-water"></i>
+        </div>
+        <div class="filter">
+          <i class="fa-solid fa-cow"></i>
+        </div>
+        <div class="filter">
+          <i class="fa-solid fa-umbrella-beach"></i>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+        </div>
+        
+        
+      </div>
+    
+        <%for(let listing of allListings){%>
+            
+        <a href="/listings/<%=listing.id%>" class="listing-link" style="width: 20rem;" >
+            <div class="card card-listing">
+            <img src="<%=listing.image.url%>" class="card-img-top" alt="listing_img" style="height: 20rem;">
+            <div class="card-img-overlay">click</div>
+            
+                
+                <div class="card-body">
+                  <p class="card-text">
+                    <b><%=listing.title%></b>
+                    <br>
+                    &#8377;<%=listing.price.toLocaleString("en-IN")%>
+                  </p>
+                </div>
+              </div>
+             
+
+        </a>
+        <%}%>
+    </div>
+        
+   
+
+
+
+
+    
+    

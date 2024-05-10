@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+
+.navbar{
+    height: 5rem;
+}
+.fa-compass{
+    color: red;
+    font-size: 2rem;
+
+}
+.nav-link{
+    color: black!important;
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color: black;
+
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+
+}
+
+
+.f-info-links{
+    width: 100px;
+    position: relative;
+    left: 700px;
+}
+
+.f-info-socials{
+    width: 100%;
+    font-size: 1.2rem;
+
+}
+.f-info-socials i{
+    margin-right: 1rem;
+}
+.card-listing{
+    border: none!important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top{
+    border-radius: 1rem!important;
+    width: 100%!important;
+    object-fit: cover!important;
+}
+.card-body{
+    padding: 0!important;
+}
+
+.card-text p{
+    font-weight: 400;
+}
+.listing-link{
+    text-decoration: none;
+}
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+
+.add-btn{
+    background-color: red!important;
+    border: none!important;
+}
+.edit-btn{
+    background-color: red!important;
+    border: none!important;
+}
+.show-img{
+    height:30vh;
+
+}
+.btns{
+    display:flex;
+
+}
+.show-card{
+    padding-left: 5px;
+}
+
+.edit{
+    display: inline!important;
+    position: relative;
+    top: 35px;
+}
+
+.delete{
+    position:relative ;
+    left: 200px;
+
+}
+
+.card-img-overlay{
+    display: flex;
+    justify-content: center!important;
+    font-size: 50px;
+    font-weight: 700;
+   
+
+}
+
+.footer{
+    background-color: rgb(196, 204, 255);
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    height: 100px;
+}
+.f-info{
+    background-color:rgb(196, 204, 255) ;
+    
+    text-align: center;
+    
+    
+    
+}
+.company{
+    text-align: center;
+    
+    
+}
+.map{
+    height: 400px;
+    width: 80vh;
+}
