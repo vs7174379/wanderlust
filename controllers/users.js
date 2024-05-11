@@ -5,6 +5,7 @@ module.exports.renderSignupForm=(req,res)=>{
 };
 
 module.exports.renderLoginForm=(req,res)=>{
+    
     res.render("users/login.ejs")
 };
 
