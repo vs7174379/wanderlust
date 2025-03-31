@@ -41,9 +41,7 @@ app.listen(8080,()=>{
     console.log("server is listening successsfully");
 })
 
-app.get("/",(req,res)=>{
-    res.send("Hi,i am root");
-})
+
 const store= MongoStore.create({
     mongoUrl:dburl,
     crypto:{
